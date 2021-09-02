@@ -1,0 +1,112 @@
+.header {
+  height: 580px;
+  padding-top: 40px;
+  padding-bottom: 183px;
+
+  background-image: url(../images/first-slider-480.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  &__logo {
+    width: 69px;
+    height: 56px;
+    cursor: pointer;
+
+    fill: #ffffff;
+    transition: fill 250ms $cubic;
+  }
+  &__logo:hover,
+  &__logo:focus {
+    fill: $accent-color;
+  }
+  &__links {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__contacts {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+.side-bar {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.slider {
+  padding-left: 31px;
+  padding-right: 143px;
+  margin-left: auto;
+  margin-right: auto;
+  &__box {
+    padding-top: 113px;
+  }
+  &__suptitle {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $slider-text-color;
+  }
+  &__suptitle::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: $slider-text-color;
+  }
+  &__hero-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+
+    color: $primary-title;
+  }
+  &__hero-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.02em;
+  }
+}
+.nav-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &__menu-icon {
+    cursor: pointer;
+    fill: $primary-button-color;
+    transition: fill 250ms $cubic;
+  }
+  &__menu-icon:hover,
+  &__menu-icon:focus {
+    fill: $accent-color;
+  }
+}
