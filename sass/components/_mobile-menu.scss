@@ -1,3 +1,5 @@
+.nav-mobile {
+}
 .menu-container {
   position: fixed;
   top: 0;
@@ -33,8 +35,8 @@
 .menu-toggle {
   position: absolute;
   height: 19px;
-  top: 15px;
-  right: 15px;
+  top: 49px;
+  right: 31px;
   margin: 0;
   padding: 0;
   border: none;
@@ -46,5 +48,107 @@
   &__menu-icon:hover,
   &__menu-icon:focus {
     fill: $accent-color;
+  }
+}
+.navigation-box {
+  &__item:not(:last-child) {
+    padding-bottom: 24px;
+  }
+  &__items {
+    margin-bottom: 64px;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.1em;
+
+    color: $secondary-text-color;
+    transition: color 250ms $cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__contacts {
+    margin-bottom: 64px;
+  }
+  &__link-box {
+    margin-bottom: 24px;
+  }
+  &__tel {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.39;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+  }
+  &__button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 40px;
+
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: background-color 250ms $cubic;
+  }
+  &__button-box:hover,
+  &__button-box:focus {
+    background-color: $accent-color;
+  }
+  &__button-box:hover .navigation-box__button,
+  &__button-box:focus .navigation-box__button {
+    color: #fff;
+  }
+  &__button {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+    transition: color 250ms $cubic;
+  }
+}
+.social-box {
+  &__item:first-child {
+    margin-bottom: 24px;
+  }
+  &__instagram-link,
+  &__youtube-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: $secondary-text-color;
+  }
+  &__instagram-link::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: $secondary-text-color;
+  }
+  &__youtube-link::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: transparent;
   }
 }
