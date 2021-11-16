@@ -1,9 +1,9 @@
 {
-  "name": "barber-project",
+  "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://balor1989.github.io/Barbershop/",
+  "homepage": "https://balor1989.github.io/Barbershop",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Barbershop/"
@@ -23,7 +23,7 @@
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
-    "sass": "^1.32.8"
+    "sass": "^1.43.4"
   },
   "dependencies": {}
 }

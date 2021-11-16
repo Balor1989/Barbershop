@@ -44,7 +44,7 @@ img {
   height: 580px;
   padding-top: 40px;
   padding-bottom: 183px;
-  background-image: url(../../images/first-slider-480.jpg);
+  background-image: url(../images/first-slider-480.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -492,9 +492,35 @@ img {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: #111319;
-  background-image: url(../../images/price-background-1x.png);
+  background-image: url(../images/price-background-1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.container {
+  width: 480px;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
