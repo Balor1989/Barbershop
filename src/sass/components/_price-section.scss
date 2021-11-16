@@ -6,20 +6,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.container {
-  width: 480px;
-  padding-left: 31px;
-  padding-right: 31px;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 480px) {
-    width: 480px;
+
+  &__suptitle::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: rgba(157, 164, 189, 0.6);
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  &__suptitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: rgba(157, 164, 189, 0.6);
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  &__item {
+    display: inline-flex;
   }
 }
