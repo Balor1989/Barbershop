@@ -1,7 +1,7 @@
 .price-section {
   padding-top: 84px;
   padding-bottom: 84px;
-  background-color: #111319;
+  background-color: $background-price-color;
   background-image: url(../images/price-background-1x.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -14,19 +14,90 @@
     width: 60px;
     height: 1px;
     vertical-align: middle;
-    background: rgba(157, 164, 189, 0.6);
+    background: $slider-text-color;
   }
   &__suptitle {
-    margin-bottom: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    color: rgba(157, 164, 189, 0.6);
+    color: $slider-text-color;
+  }
+  &__title {
+    margin-top: 20px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+
+    color: $primary-title;
+  }
+  &__box {
+    margin-top: 44px;
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(23, 26, 36, 1), rgba(23, 26, 36, 0.2));
+  }
+  &__list:last-child {
+    margin-top: 20px;
   }
   &__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  &__item:not(:first-child) {
+    margin-top: 20px;
+  }
+  &__item::before {
+    content: '';
+    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    order: 2;
+    height: 1px;
+  }
+  &__item-price {
+    order: 3;
+  }
+  &__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button-box {
     display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 160px;
+    height: 40px;
+
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: background-color 250ms $cubic;
+  }
+  &__button-box:hover,
+  &__button-box:focus {
+    background-color: $accent-color;
+  }
+  &__button-box:hover .price-section__button,
+  &__button-box:focus .price-section__button {
+    color: $primary-button-color;
+  }
+  &__button {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: $primary-button-color;
+    transition: color 250ms $cubic;
   }
 }
