@@ -5,4 +5,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"normalize.css":"DOAq","./../images/first-slider-480.jpg":[["first-slider-480.fe42dd81.jpg","RdDp"],"RdDp"],"./../images/price-background-1x.png":[["price-background-1x.1f0fe866.png","A7YY"],"A7YY"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Barbershop/src.469efc1a.js.map
+//# sourceMappingURL=/Barbershop/src.e7b5c627.js.map
