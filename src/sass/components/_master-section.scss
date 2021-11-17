@@ -1,0 +1,92 @@
+.master-section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background: $box-background;
+  &__suptitle {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+  }
+  &__suptitle::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: $secondary-text-color;
+  }
+  &__title {
+    margin-bottom: 44px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+
+    color: $secondary-text-color;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card {
+    display: block;
+    text-align: center;
+  }
+  &__card:not(:last-child) {
+    margin-bottom: 64px;
+  }
+  &__card-name {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+  &__card-description {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+  }
+  &__social-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: $primary-button-color;
+  }
+  &__social-link:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__social-link:hover .master-section__icon,
+  &__social-link:focus .master-section__icon {
+    fill: $accent-color;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $secondary-text-color;
+    transition: fill 250ms $cubic;
+  }
+}
