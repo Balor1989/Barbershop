@@ -1,11 +1,32 @@
-<section class="galery-section" id="galery">
+<section class="gallery-section" id="gallery">
     <div class="container">
-        <span>На латинском языке “барба” означает “борода”</span>
-        <div class="galery-section__box">
-            <img src="./images/galery-1.jpg" alt="Стрижка под машинку" width="270">
-            <img src="./images/galery-2.jpg" alt="Бритье бороды" width="270">
-            <img src="./images/galery-3.jpg" alt="Полотенце на лице" width="270">
-            <img src="./images/galery-4.jpg" alt="Бритье головы опаской" width="270">
-        </div>
+        <p class="gallery-section__suptitle">На латинском языке “барба” означает “борода”</p>
+        <ul class="gallery-section__box">
+            <li class="gallery-section__list" >
+                <picture>
+                <source srcset="./images/gallery/gallery-1-418px-1x.jpg 1x, ./images/gallery/gallery-1-418px-2x.jpg 2x, ./images/gallery/gallery-1-418px-3x.jpg 3x" media="(max-width:767px)"
+                        sizes="(min-width:418px)">
+                <img class="gallery-section__image" src="./images/gallery/gallery-1-418px-1x.jpg" alt="Стрижка под машинку" width="418"><li>
+                </picture>
+            <li class="gallery-section__list" >
+                <picture>
+                    <source srcset="./images/gallery/gallery-2-418px-1x.jpg 1x, ./images/gallery/gallery-2-418px-2x.jpg 2x, ./images/gallery/gallery-2-418px-3x.jpg 3x" media="(max-width:767px)" 
+                        sizes="(min-width:418px)">
+                <img class="gallery-section__image" src="./images/gallery/gallery-2-418px-1x.jpg" alt="Бритье бороды" width="418"><li>
+                </picture>
+            <li class="gallery-section__list" ><img class="gallery-section__image" src="./images/gallery/gallery-3-418px-1x.jpg" alt="Полотенце на лице" width="418"><li>
+            <li class="gallery-section__list" ><img class="gallery-section__image" src="./images/gallery/gallery-4-418px-1x.jpg" alt="Бритье головы опаской" width="418"><li>
+        </ul>
     </div>
 </section>
+
+
+<!-- <picture>
+    <source srcset="./images/first-dev-450.jpg 1x, ./images/first-dev-900.jpg 2x" media="(max-width:767px)"
+        sizes="(min-width:450px)">
+    <source srcset="./images/first-dev-354.jpg 1x, ./images/first-dev-708.jpg 2x" media="(max-width:1199px)"
+        sizes="(min-width:354px)">
+    <source srcset="./images/first-dev-270.jpg 1x, ./images/first-dev-540.jpg 2x" media="(min-width:1200px)"
+        sizes="(min-width:270px)">
+    <img class="developer__image" src="./images/first-dev-450.jpg" alt="Игорь Демьяненко">
+</picture> -->

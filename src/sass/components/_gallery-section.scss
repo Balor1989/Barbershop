@@ -1,0 +1,38 @@
+.gallery-section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  &__suptitle {
+    display: block;
+    margin-bottom: 44px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+  }
+  &__suptitle::before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: $secondary-text-color;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__box {
+    display: block;
+    text-align: center;
+  }
+  &__image {
+    max-width: 418px;
+    max-height: 360px;
+  }
+}
