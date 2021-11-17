@@ -43,8 +43,13 @@
   &__containers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   &__box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 193px;
     height: 133px;
 
@@ -55,5 +60,32 @@
   }
   &__box:not(:nth-child(2n)) {
     margin-right: 30px;
+  }
+  &__number {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $secondary-text-color;
+  }
+  &__number::after {
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    vertical-align: 25px;
+
+    color: #ff6c00;
+  }
+  &__number-description {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: $secondary-text-color;
   }
 }
