@@ -68,29 +68,30 @@
   }
   &__button-box {
     display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    text-align: center;
     width: 160px;
-    height: 40px;
+    margin-top: 50px;
 
     border: 1px solid $accent-color;
     border-radius: 20px;
     background-color: transparent;
     transition: background-color 250ms $cubic;
   }
-  &__button-box:hover,
-  &__button-box:focus {
-    background-color: $accent-color;
+  &__button-box:hover {
+    background: $accent-color;
   }
-  &__button-box:hover .price-section__button,
-  &__button-box:focus .price-section__button {
-    color: $primary-button-color;
+  &__button-box:focus-within {
+    background: $accent-color;
   }
+
   &__button {
+    padding: 12px 0;
+    width: inherit;
+    height: inherit;
     text-decoration: none;
+    border: none;
+    border-radius: 30px;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;

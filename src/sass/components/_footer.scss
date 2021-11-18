@@ -60,6 +60,43 @@
     color: $primary-title;
     border-bottom: 1px solid $primary-title;
   }
+  &__button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: background-color 250ms $cubic;
+  }
+  &__button-box:hover {
+    background: $accent-color;
+  }
+  &__button-box:focus-within {
+    background: $accent-color;
+  }
+  &__button-box:hover .about-section__button,
+  &__form-button:focus {
+    color: #fff;
+  }
+  &__form-button {
+    padding: 12px 0;
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: $primary-button-color;
+    transition: color 250ms $cubic;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {

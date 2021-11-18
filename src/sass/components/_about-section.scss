@@ -55,27 +55,32 @@
     color: $secondary-text-color-lighter;
   }
   &__button-box {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    text-align: center;
     width: 160px;
-    height: 40px;
 
     border: 1px solid $accent-color;
     border-radius: 20px;
     background-color: transparent;
     transition: background-color 250ms $cubic;
   }
-  &__button-box:hover,
-  &__button-box:focus {
-    background-color: $accent-color;
+  &__button-box:hover {
+    background: $accent-color;
   }
-  &__button-box:hover .about-section__button,
-  &__button-box:focus .about-section__button {
+  &__button-box:focus-within {
+    background: $accent-color;
+  }
+  &__button-box:hover .footer__form-button,
+  &__button:focus {
     color: #fff;
   }
   &__button {
+    padding: 12px 0;
+    width: inherit;
+    height: inherit;
     text-decoration: none;
+    border-radius: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
