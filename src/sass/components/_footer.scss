@@ -161,7 +161,46 @@
     letter-spacing: 0.02em;
   }
 }
+.copyright {
+  padding-top: 44px;
+  padding-bottom: 44px;
+  &__social-box {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__social-link {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
 
+    color: $secondary-text-color;
+  }
+  &__social-link:first-child::before {
+    content: '';
+    display: inline-block;
+    margin-right: 40px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: $secondary-text-color;
+  }
+  &__social-link:last-child {
+    margin-left: 40px;
+  }
+  &__copy-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+  }
+  &__copy {
+    margin-right: 6px;
+  }
+}
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .footer__section:last-child {
     background-image: url(../images/footer-contacts/contacts-image-mobile-2x.png);
