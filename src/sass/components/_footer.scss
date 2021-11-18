@@ -1,0 +1,86 @@
+.footer {
+  &__section:first-child {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background: $form-background;
+  }
+  &__section:last-child {
+    padding-top: 84px;
+    padding-bottom: 84px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $form-background;
+    background-image: url(../images/footer-contacts/contacts-image-mobile-1x.png);
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/footer-contacts/contacts-image-tablet-1x.png);
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/footer-contacts/contacts-image-desktop-1x.png);
+    }
+  }
+  &__form-title {
+    margin-bottom: 44px;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $primary-title;
+  }
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input-value {
+    margin-bottom: 44px;
+    background: $form-background;
+    border: none;
+    border-bottom: 1px solid $form-input-color;
+    transition: 250ms $cubic;
+    color: $primary-text-color;
+  }
+  &__input-value::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: 250ms $cubic;
+  }
+  &__input-value:hover::placeholder,
+  &__input-value:focus::placeholder {
+    color: $primary-title;
+  }
+  &__input-value:hover,
+  &__input-value:focus {
+    outline: none;
+    color: $primary-title;
+    border-bottom: 1px solid $primary-title;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer__section:last-child {
+    background-image: url(../images/footer-contacts/contacts-image-mobile-2x.png);
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/footer-contacts/contacts-image-tablet-2x.png);
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/footer-contacts/contacts-image-desktop-2x.png);
+    }
+  }
+}
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .footer__section:last-child {
+    background-image: url(../images/footer-contacts/contacts-image-mobile-3x.png);
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/footer-contacts/contacts-image-tablet-3x.png);
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/footer-contacts/contacts-image-desktop-3x.png);
+    }
+  }
+}
