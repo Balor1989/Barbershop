@@ -30,6 +30,7 @@
 
     color: $primary-title;
   }
+
   &__input-box {
     display: flex;
     flex-direction: column;
@@ -59,6 +60,11 @@
     outline: none;
     color: $primary-title;
     border-bottom: 1px solid $primary-title;
+  }
+  &__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__button-box {
     display: flex;
