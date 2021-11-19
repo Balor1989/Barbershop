@@ -16,7 +16,6 @@
     }
   }
   &__left-box {
-    width: 90px;
     height: 680px;
     @media screen and (max-width: 767px) {
       display: none;
@@ -36,53 +35,115 @@
 
 .nav-box {
   padding-top: 40px;
+  margin-right: 39px;
+  margin-left: 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   &__logo-lighter {
     width: 69px;
     height: 56px;
 
-    fill: #ffffff;
+    fill: $logo-color-lighter;
     transition: fill 250ms $cubic;
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
   &__logo-darker {
-    transform: rotate(90deg);
+    margin-left: 50px;
+    margin-right: 40px;
+    padding-top: 40px;
     width: 69px;
     height: 56px;
 
-    fill: #303030;
+    fill: $logo-color-darker;
     transition: fill 250ms $cubic;
   }
   &__logo-lighter:hover,
-  &__logo-lighter:focus,
-  &__logo-darker:hover,
-  &__logo-darker:focus {
+  &__logo-darker:hover {
     fill: $accent-color;
   }
-
   &__links {
+    display: flex;
     @media screen and (max-width: 767px) {
       display: none;
     }
   }
+  &__item:not(:last-child) {
+    margin-right: 24px;
+  }
+  &__link {
+    padding: 5px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: $header-text;
+    transition: color 250ms $cubic;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
   &__contacts {
+    display: inline-flex;
+    flex-direction: column;
     @media screen and (max-width: 767px) {
       display: none;
     }
   }
 }
+
 .side-bar {
+  position: relative;
+  height: inherit;
   display: flex;
-  background: lavender;
-  transform: rotate(270deg);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   @media screen and (max-width: 767px) {
     display: none;
   }
+  &__list {
+    position: absolute;
+    bottom: 155px;
+    display: flex;
+    transform: rotate(-90deg);
+  }
+  &__item:first-child::before {
+    content: '';
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 40px;
+    width: 60px;
+    height: 1px;
+    vertical-align: middle;
+    background: $secondary-text-color;
+  }
+  &__item {
+    margin-left: 40px;
+  }
+  &__social-link:hover,
+  &__social-link:focus {
+    color: $accent-color;
+  }
+  &__social-link {
+    padding: 5px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: $secondary-text-color;
+    transition: color 250ms $cubic;
+  }
 }
+
 .slider {
   &__box {
     margin-top: 113px;
@@ -127,6 +188,7 @@
     letter-spacing: 0.02em;
   }
 }
+
 .nav-button {
   display: inline-flex;
   margin: 0;
@@ -157,21 +219,12 @@
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
-
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//   .hero-section {
-//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//       url(../images/hero-img-mobile-960.jpg);
-//     @media screen and (min-width: 768px) {
-//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../images/hero-img-tablet-1536.jpg);
-//     }
-//     @media screen and (min-width: 1200px) {
-//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../images/hero-img-desktop-3200.jpg);
-//     }
