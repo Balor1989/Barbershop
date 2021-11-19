@@ -1,12 +1,36 @@
 .header {
-  height: 580px;
-
-  background-image: url(../images/first-slider-480.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @media screen and (max-width: 767px) {
+    height: 580px;
+    background-image: url(../images/first-slider-480.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   @media screen and (min-width: 768px) {
     height: 680px;
+  }
+  &__container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__left-box {
+    width: 90px;
+    height: 680px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__right-box {
+    @media screen and (min-width: 768px) {
+      height: 680px;
+      min-width: 609px;
+      background-image: url(../images/first-slider-721.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -15,17 +39,31 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &__logo {
+  &__logo-lighter {
     width: 69px;
     height: 56px;
 
     fill: #ffffff;
     transition: fill 250ms $cubic;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
-  &__logo:hover,
-  &__logo:focus {
+  &__logo-darker {
+    transform: rotate(90deg);
+    width: 69px;
+    height: 56px;
+
+    fill: #303030;
+    transition: fill 250ms $cubic;
+  }
+  &__logo-lighter:hover,
+  &__logo-lighter:focus,
+  &__logo-darker:hover,
+  &__logo-darker:focus {
     fill: $accent-color;
   }
+
   &__links {
     @media screen and (max-width: 767px) {
       display: none;
@@ -38,6 +76,7 @@
   }
 }
 .side-bar {
+  display: flex;
   background: lavender;
   transform: rotate(270deg);
   @media screen and (max-width: 767px) {
@@ -46,7 +85,7 @@
 }
 .slider {
   &__box {
-    padding-top: 113px;
+    margin-top: 113px;
   }
   &__suptitle {
     display: block;
