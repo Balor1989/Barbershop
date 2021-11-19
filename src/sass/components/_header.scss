@@ -1,14 +1,17 @@
 .header {
-  padding-top: 40px;
-  padding-bottom: 183px;
+  height: 580px;
 
   background-image: url(../images/first-slider-480.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-width: 768px) {
+    height: 680px;
+  }
 }
 
 .nav-box {
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,6 +38,8 @@
   }
 }
 .side-bar {
+  background: lavender;
+  transform: rotate(270deg);
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -76,6 +81,7 @@
     color: $primary-title;
   }
   &__hero-description {
+    max-width: 306px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.625;
@@ -113,8 +119,8 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
   }
 }
 
