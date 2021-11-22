@@ -9,6 +9,7 @@
   @media screen and (min-width: 768px) {
     height: 680px;
   }
+
   &__container {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -30,6 +31,10 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    @media screen and (min-width: 1280px) {
+      min-width: 1125px;
+      background-image: url(../images/first-slider-960.jpg);
+    }
   }
 }
 
@@ -38,8 +43,10 @@
   margin-right: 39px;
   margin-left: 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  @media screen and (min-width: 1280px) {
+    margin-left: 40px;
+  }
 
   &__logo-lighter {
     width: 69px;
@@ -71,8 +78,14 @@
       display: none;
     }
   }
+  &__item {
+    margin-top: 12px;
+  }
   &__item:not(:last-child) {
     margin-right: 24px;
+    @media screen and (min-width: 1280px) {
+      margin-right: 40px;
+    }
   }
   &__link {
     padding: 5px 0;
@@ -91,10 +104,68 @@
   }
   &__contacts {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     @media screen and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+    }
+  }
+  &__phone {
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: $primary-title;
+    transition: color 250ms $cubic;
+    @media screen and (min-width: 1280px) {
+      margin-top: 0;
+      margin-right: 40px;
+    }
+  }
+  &__phone:hover,
+  &__phone:focus {
+    color: $accent-color;
+  }
+  &__button-box {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 160px;
+
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: background-color 250ms $cubic;
+  }
+  &__button-box:hover {
+    background: $accent-color;
+  }
+  &__button-box:focus-within {
+    background: $accent-color;
+  }
+
+  &__button {
+    padding: 12px 0;
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: $primary-button-color;
+    transition: color 250ms $cubic;
   }
 }
 
@@ -147,6 +218,14 @@
 .slider {
   &__box {
     margin-top: 113px;
+    @media screen and (min-width: 768px) {
+      margin-top: 156px;
+      margin-left: 120px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 184px;
+      margin-left: 100px;
+    }
   }
   &__suptitle {
     display: block;
@@ -179,6 +258,10 @@
     letter-spacing: 0.05em;
 
     color: $primary-title;
+    @media screen and (min-width: 1280px) {
+      font-size: 72px;
+      line-height: 1.18;
+    }
   }
   &__hero-description {
     max-width: 306px;
@@ -186,6 +269,14 @@
     font-size: 16px;
     line-height: 1.625;
     letter-spacing: 0.02em;
+    @media screen and (min-width: 768px) {
+      max-width: 355px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 470px;
+      font-size: 18px;
+      line-height: 1.67;
+    }
   }
 }
 
