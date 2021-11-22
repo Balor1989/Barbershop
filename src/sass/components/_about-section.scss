@@ -13,6 +13,9 @@
     @media screen and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 1280px) {
+      margin-right: 64px;
+    }
   }
   &__items {
     @media screen and (min-width: 1280px) {
@@ -32,6 +35,7 @@
       margin-right: 30px;
     }
   }
+
   &__suptitle {
     display: block;
     margin-bottom: 20px;
