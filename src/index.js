@@ -1,11 +1,16 @@
 import './sass/main.scss';
 import "@fontsource/raleway";
 import "@fontsource/open-sans";
-import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
+import Swiper, {Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 
-Swiper.use([Navigation, Pagination, Autoplay]);
+Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
-new Swiper('.swiper',{
+new Swiper('.swiper', {
+  speed: 1000,
+  effect: 'fade',
+    fadeEffect: {
+      crossFade: true, 
+  },
   loop: true,
   pagination: {
       el: '.swiper-pagination',
