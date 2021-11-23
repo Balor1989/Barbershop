@@ -26,7 +26,8 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "postcss-normalize": "^10.0.1",
     "posthtml-include": "^1.6.2",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "swiper": "^7.3.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
