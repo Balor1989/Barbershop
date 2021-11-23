@@ -6,7 +6,8 @@ import Swiper, {Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 
 new Swiper('.swiper', {
-  speed: 1000,
+  direction:'vertical',
+  speed: 700,
   effect: 'fade',
     fadeEffect: {
       crossFade: true, 
@@ -23,7 +24,7 @@ new Swiper('.swiper', {
     autoplay: {
     pauseOnMouseEnter:true,
     disableOnInteraction: false,
-    delay: 4000,
+    delay: 3000,
  },
 });
 

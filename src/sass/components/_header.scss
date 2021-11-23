@@ -452,25 +452,25 @@
 // Swiper pagination
 .swiper-pagination {
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
-  position: absolute;
-  top: 325px;
-  display: inline-flex;
+  justify-content: space-around;
+  margin-right: 40px;
 }
 .swiper-pagination-bullet {
-  width: 8px;
+  width: 15px;
+  background-color: $primary-text-color;
   height: 3px;
   border-radius: 2px;
 }
 .swiper-pagination-bullet-active {
-  width: 18px;
+  width: 30px;
   background: $primary-text-color;
 }
 .swiper-pagination-horizontal {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 60px;
 }
 // Swiper Navigation
 .swiper-button-prev::after,
