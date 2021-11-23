@@ -1,8 +1,24 @@
 import './sass/main.scss';
 import "@fontsource/raleway";
 import "@fontsource/open-sans";
-import Swiper from '../node_modules/swiper';
-import '../node_modules/swiper/swiper.scss';
+import Swiper, { Autoplay, Navigation, Pagination } from 'swiper';
 
-  const swiper = new Swiper('.swiper');
+Swiper.use([Navigation, Pagination, Autoplay]);
+
+new Swiper('.swiper',{
+  loop: true,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+    pauseOnMouseEnter:true,
+    disableOnInteraction: false,
+    delay: 4000,
+ },
+});
 

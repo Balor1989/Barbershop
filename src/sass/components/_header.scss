@@ -73,13 +73,19 @@
   }
 }
 .second-slide {
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/Slider-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .third-slide {
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/Slider-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
