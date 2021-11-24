@@ -117,11 +117,12 @@
   &__button-box:focus-within {
     background: $accent-color;
   }
-  &__button-box:hover .about-section__button,
-  &__form-button:focus {
+  &__button-box:hover,
+  &__button-box:focus {
     color: #fff;
   }
   &__form-button {
+    cursor: pointer;
     padding: 12px 0;
     width: inherit;
     height: inherit;
@@ -173,6 +174,11 @@
     letter-spacing: 0.02em;
 
     color: $primary-text-color;
+    transition: color 250ms $cubic;
+  }
+  &__contact-link:hover,
+  &__contact-link:focus {
+    color: $accent-color;
   }
   &__contact-link:first-child {
     @media screen and (min-width: 768px) {
@@ -254,6 +260,11 @@
     letter-spacing: 0.2em;
 
     color: $secondary-text-color;
+    transition: color 250ms $cubic;
+  }
+  &__social-link:hover,
+  &__social-link:focus {
+    color: $accent-color;
   }
   &__social-link:first-child::before {
     content: '';

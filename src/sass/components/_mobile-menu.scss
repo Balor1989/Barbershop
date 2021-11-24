@@ -27,9 +27,6 @@
   height: 100vh;
   padding-top: 119px;
   padding-left: 40px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
 }
 
 .menu-toggle {
@@ -42,6 +39,7 @@
   border: none;
   background-color: transparent;
   &__menu-icon {
+    cursor: pointer;
     fill: #000;
     transition: fill 250ms $cubic;
   }
@@ -87,29 +85,39 @@
     text-transform: uppercase;
 
     color: $secondary-text-color;
+    transition: color 250ms $cubic;
+  }
+  &__tel:hover,
+  &__tel:focus {
+    color: $accent-color;
   }
   &__button-box {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    text-align: center;
     width: 160px;
-    height: 40px;
 
     border: 1px solid $accent-color;
     border-radius: 20px;
     background-color: transparent;
     transition: background-color 250ms $cubic;
   }
-  &__button-box:hover,
-  &__button-box:focus {
-    background-color: $accent-color;
+  &__button-box:hover {
+    background: $accent-color;
   }
-  &__button-box:hover .navigation-box__button,
-  &__button-box:focus .navigation-box__button {
+  &__button-box:focus-within {
+    background: $accent-color;
+  }
+  &__button:hover,
+  &__button:focus {
     color: #fff;
   }
   &__button {
+    padding: 12px 0;
+    width: inherit;
+    height: inherit;
     text-decoration: none;
+    border-radius: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -132,6 +140,7 @@
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: $secondary-text-color;
+    transition: color 250ms $cubic;
   }
   &__instagram-link::before {
     content: '';
@@ -150,5 +159,11 @@
     height: 1px;
     vertical-align: middle;
     background: transparent;
+  }
+  &__instagram-link:focus,
+  &__youtube-link:focus,
+  &__instagram-link:hover,
+  &__youtube-link:hover {
+    color: $accent-color;
   }
 }

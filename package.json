@@ -27,6 +27,7 @@
     "postcss-normalize": "^10.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.43.4",
+    "sweet-scroll": "^4.0.0",
     "swiper": "^7.3.0",
     "vanilla-back-to-top": "^7.2.1"
   },
