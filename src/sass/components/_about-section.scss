@@ -113,7 +113,7 @@
   &__button-box:focus-within {
     background: $accent-color;
   }
-  &__button-box:hover .footer__form-button,
+  &__button:hover,
   &__button:focus {
     color: #fff;
   }
