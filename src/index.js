@@ -6,7 +6,6 @@ import { addBackToTop } from 'vanilla-back-to-top';
 import SweetScroll from 'sweet-scroll';
 
 
-
 // Swiper settings
 Swiper.use([Navigation, Pagination, Autoplay, EffectFade]);
 new Swiper('.swiper', {
@@ -54,3 +53,4 @@ document.addEventListener(
   'DOMContentLoaded',onSmoothScroll,
   false,
 );
+
