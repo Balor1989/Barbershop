@@ -8,6 +8,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    document.body.classList.toggle('backdrop')
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -15,8 +16,14 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
+  function onBodyClick(e) {
+    
+    console.log(e.target)
+    console.log(e.currentTarget)
+  }
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  document.body.addEventListener('click', onBodyClick);
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
