@@ -3,8 +3,6 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const mobileBox = document.querySelector('.header__mobile-box')
-  const mobileLinks = document.querySelector('.navigation-box__link')
-console.log(mobileLinks)
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -21,7 +19,11 @@ console.log(mobileLinks)
   };
 
   function onContainerClick(e) {
-    if (e.currentTarget === e.target || e.target === mobileLinks ) {
+    if (e.target === document.querySelector('.first-link')
+      || e.target === document.querySelector('.third-link')
+      || e.target === document.querySelector('.fourth-link')
+      || e.target === document.querySelector('.second-link')
+      || e.target === document.querySelector('.navigation-box__button')) {
       toggleMenu()
     }
     console.log(e.target)
