@@ -26,8 +26,6 @@
       || e.target === document.querySelector('.navigation-box__button')) {
       toggleMenu()
     }
-    console.log(e.target)
-    console.log(e.currentTarget)
   }
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
