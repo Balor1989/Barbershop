@@ -1,3 +1,7 @@
+.header__mobile-box.is-hidden {
+  width: inherit;
+  height: inherit;
+}
 .header {
   @media screen and (max-width: 767px) {
     height: 580px;
