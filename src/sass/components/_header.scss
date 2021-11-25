@@ -346,12 +346,60 @@
   }
 }
 
+// Swiper
+.swiper {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    height: 680px;
+    min-width: 617px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1125px;
+  }
+}
+.first-slide {
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/header/header-1-tablet-1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/header-1-desktop-1x.jpg);
+  }
+}
+.second-slide {
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/header/header-2-tablet-1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/header-2-desktop-1x.jpg);
+  }
+}
+.third-slide {
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/header/header-3-tablet-1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/header-3-desktop-1x.jpg);
+  }
+}
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
     @media screen and (max-width: 767px) {
       background-image: url(../images/header/header-mobile-2x.jpg);
     }
   }
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .first-slide {
     @media screen and (min-width: 768px) {
       background-image: url(../images/header/header-1-tablet-2x.jpg);
@@ -406,53 +454,6 @@
     @media screen and (min-width: 1280px) {
       background-image: url(../images/header/header-3-desktop-3x.jpg);
     }
-  }
-}
-
-// Swiper
-.swiper {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    height: 680px;
-    min-width: 617px;
-  }
-  @media screen and (min-width: 1280px) {
-    min-width: 1125px;
-  }
-}
-.first-slide {
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/header/header-1-tablet-1x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/header/header-1-desktop-1x.jpg);
-  }
-}
-.second-slide {
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/header/header-2-tablet-1x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/header/header-2-desktop-1x.jpg);
-  }
-}
-.third-slide {
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/header/header-3-tablet-1x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/header/header-3-desktop-1x.jpg);
   }
 }
 // Swiper pagination
